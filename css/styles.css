@@ -15,6 +15,22 @@ body {
     color: var(--color-text);
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;;
+}
+
+.conteiner {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .site-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -80,6 +96,16 @@ body {
 
 /* ----------- header ------------- */
 
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.nav-list {
+    display: flex;
+}
+
 .header-nav-item:is(:hover,:focus),
 .header-address-item:is(:hover,:focus){
     color: var(--color-pressed-state);
@@ -101,6 +127,8 @@ body {
 /* ----------- order ------------- */
 
 .order {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-color: var(--color-dark);
 }
 
@@ -109,6 +137,7 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 48px;
     color: var(--color-white);
 }
 
@@ -123,11 +152,30 @@ body {
 
 /* ----------- content ------------- */
 
+.content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.do-title {
+    margin-bottom: 72px;
+}
+
 /* ----------- do ------------- */
+
+.do {
+    padding-bottom: 120px;
+}
 
 /* ----------- team ------------- */
 .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--color-light);
+}
+
+.team-title {
+    margin-bottom: 72px;
 }
 
 .team-list-item {
@@ -136,6 +184,8 @@ body {
 /* ----------- footer ------------- */
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--color-dark);
 }
 
@@ -144,6 +194,29 @@ body {
 }
 
 /* ----------- gallery ------------- */
+
+.gallery {
+    padding-top: 96px;
+    padding-bottom: 132px;
+}
+
+.gallery-nav {
+    margin-bottom: 72px;
+    display: flex;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex-basis: calc(100% / 3 - 72);
+
+    margin-top: 48px;
+    margin-left: 24px;
+}
 
 .gallery-nav-item:is(:hover,:focus) {
     background-color: var(--color-pressed-state);
