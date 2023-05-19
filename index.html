@@ -15,18 +15,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
-      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="conteiner">
+      <div class="conteiner header-conteiner">
         <nav class="header-nav">
           <a href="./index.html" class="site-logo link">
             Web<span class="header-logo">Studio</span>
@@ -50,7 +43,7 @@
         </nav>
 
         <address class="header-address">
-          <ul class="list">
+          <ul class="address-list list">
             <li>
               <a
                 href="mailto:info@devstudio.com"
@@ -71,41 +64,40 @@
     </header>
 
     <main>
-      <section class="order">
+      <section class="hero">
         <div class="conteiner">
-          <h1 class="order-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-btn btn-text">
-            Order Service
-          </button>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+
+          <button type="button" class="hero-btn btn-text">Order Service</button>
         </div>
       </section>
 
       <section class="content">
         <div class="conteiner">
           <h2 hidden class="content-title">content</h2>
-          <ul class="list">
-            <li>
+          <ul class="content-list list">
+            <li class="content-list-item">
               <h3 class="title-down">Strategy</h3>
               <p class="medium-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="content-list-item">
               <h3 class="title-down">Punctuality</h3>
               <p class="medium-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="content-list-item">
               <h3 class="title-down">Diligence</h3>
               <p class="medium-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="content-list-item">
               <h3 class="title-down">Technologies</h3>
               <p class="medium-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -119,12 +111,14 @@
       <section class="do">
         <div class="conteiner">
           <h2 class="do-title title-up">What are we doing</h2>
-          <ul class="list">
-            <li><img src="./images/img1.jpg" alt="monitor" width="360" /></li>
-            <li>
+          <ul class="do-list list">
+            <li class="do-list-item">
+              <img src="./images/img1.jpg" alt="monitor" width="360" />
+            </li>
+            <li class="do-list-item">
               <img src="./images/img2.jpg" alt="smartphone" width="360" />
             </li>
-            <li>
+            <li class="do-list-item">
               <img
                 src="./images/img3.jpg"
                 alt="laptop and smartphone"
@@ -138,11 +132,13 @@
       <section class="team">
         <div class="conteiner">
           <h2 class="team-title title-up">Our Team</h2>
-          <ul class="list">
+          <ul class="team-list list">
             <li class="team-list-item">
               <img src="./images/team-card1.jpg" alt="mark" width="264" />
-              <h3 class="title-down">Mark Guerrero</h3>
-              <p class="medium-text">Product Designer</p>
+              <div class="team-list-item-conteiner">
+                <h3 class="title-down">Mark Guerrero</h3>
+                <p class="medium-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img src="./images/team-card2.jpg" alt="tom" width="264" />
